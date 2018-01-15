@@ -1,24 +1,16 @@
-  <div class="container">
-  <br>
-            <br>
+<div class="container">
 
         <div class="row">
 
             <div class="col-md-3">
-            <br>
-            <br>
                 <%@include file="./shared/sidebar.jsp" %>
             </div>
 
             <div class="col-md-9">
-				
+
                 <div class="row carousel-holder">
 
                     <div class="col-md-12">
-                    <br>
-            <br>
-            <br>
-            <br>
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

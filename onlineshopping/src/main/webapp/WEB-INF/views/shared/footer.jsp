@@ -1,4 +1,4 @@
-    <div class="container footer">
+ <div class="container footer">
 
         <hr>
 
@@ -6,9 +6,9 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Online Shopping 2018</p>
+                    <p>Copyright &copy; OnlineShooping By Dilendra Pant WWW.dilendra.com </p>
                 </div>
             </div>
         </footer>
 
-    </div>
+</div>
