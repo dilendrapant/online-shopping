@@ -1,4 +1,4 @@
-package net.kzn.shoppingbackend.config;
+\package net.kzn.shoppingbackend.config;
 
 import java.util.Properties;
 
