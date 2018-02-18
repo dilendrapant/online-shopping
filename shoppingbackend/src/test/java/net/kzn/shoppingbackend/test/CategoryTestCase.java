@@ -61,7 +61,7 @@ public class CategoryTestCase {
 //	@Test
 //	public void testDeleteCategory(){
 //		category = categoryDAO.get(2);
-//		assertEquals("Successfully Delete perticular category",true,categoryDAO.delete(category));
+//		assertEquals("Successfully Delete particular category",true,categoryDAO.delete(category));
 //	}
 	
 	
@@ -72,7 +72,7 @@ public class CategoryTestCase {
 //		assertEquals("Successfully feateched list of catregory ",3,categoryDAO.list().size());
 //	}
 	
-//
+
 //	@Test
 //	public void testCRUDCategory(){
 //		
