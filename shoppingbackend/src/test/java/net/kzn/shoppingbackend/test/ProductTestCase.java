@@ -69,6 +69,7 @@ public class ProductTestCase {
 	} 
 	
 	
+	
 	@Test
 	public void testListActiveProductsByCategory() {
 		assertEquals("Something went wrong while fetching the list of products!",
