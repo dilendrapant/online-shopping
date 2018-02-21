@@ -30,6 +30,7 @@ $(function() {
 	
 	// Execute only when table is available.
 	
+	
 	if($table.length){
 		//console.log('Inside the table!');
 		$table.DataTable({
