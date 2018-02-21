@@ -20,28 +20,44 @@ $(function() {
 
 	}
 
-	// JQuery DataTable
+	// DataTable
+	var $table = $('#productListTable');
 
-	var products = [ [ '1', 'ABC' ], [ '2', 'DEF' ], [ '3', 'GHI' ],
-			[ '4', 'JKL' ], [ '5', 'MNO' ], [ '6', 'PQR' ], [ '7', 'STU' ],
-			[ '8', 'VWX' ], ];
-	
-	var $table=$('#productListTable');
-	
 	// Execute only when table is available.
+
+	if ($table.length) {
+		// console.log('Inside the table!');
+
+		var jsonUrl = '';
+		if (window.categoryId == '') {
+
+			jsonUrl = window.contextRoot+'/json/data/all/products';
+
+		} else {
+			jsonUrl = window.contextRoot+'/json/data/category/'+window.categoryId+'/products';
 	
-	
-	if($table.length){
-		//console.log('Inside the table!');
+		}
+
 		$table.DataTable({
-			lengthMenu:[[3,5,10,-1],['3 Records', '5 Records','10 Records','All']],
-			pageLength:5,
-			data:products
+			lengthMenu: [ [ 3, 5, 10, -1 ],	[ '3 Records', '5 Records', '10 Records', 'All' ] ],
+			pageLength: 5,
+			ajax: {
+				url: jsonUrl,
+				dataSrc: ''
+			},
+			columns: [ {
+				data: 'name'
+			}, {
+				data: 'brand'
+			}, {
+				data: 'unitPrice'
+			}, {
+				data: 'quantity'
+			}
+
+			]
 		});
-		
+
 	}
-	
-	
-	
 
 });
